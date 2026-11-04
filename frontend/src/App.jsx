@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { Activity, Server, Cpu, AlertTriangle, RefreshCw, Zap, Radio, Clock } from 'lucide-react';
 
-const BACKEND_URL = 'http://localhost:5001';
+const BACKEND_URL = 'https://opssense.onrender.com';
 
 export default function App() {
   const [metrics, setMetrics] = useState({ cpuUsage: 0, memoryUsage: 0, apiLatency: 0, activeIncidentsCount: 0 });
